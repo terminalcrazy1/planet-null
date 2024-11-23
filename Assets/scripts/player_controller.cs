@@ -13,13 +13,13 @@ public class player_controller : MonoBehaviour
     public float roll_speed;
     public Rigidbody2D rb;
     public Camera cam;
-    public Collider2D attack_hit_box;
+    Collider2D attack_hit_box;
     Vector2 player_to_mouse;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -36,15 +36,13 @@ public class player_controller : MonoBehaviour
 
     void move()
     {
-        rb.velocity = wishDir.normalized * speed;
+        rb.linearVelocity = wishDir.normalized * speed;
     }
 
     void getInput()
     {
         wishDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        
         player_to_mouse = (cam.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
-
         if(Input.GetKeyDown(KeyCode.Space))
         {
             roll();
@@ -52,12 +50,12 @@ public class player_controller : MonoBehaviour
     }
 
     void roll()
-    {  
+    {
         transform.Translate(player_to_mouse * roll_speed);
         Debug.Log("roll");
     }
     void attack()
     {
-        
+
     }
 }
