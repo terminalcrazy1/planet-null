@@ -2,7 +2,7 @@
 
 *Note 2: this document is for design and development, none of this information is imperative, and all information is subject to change through the course of development*
 
-*Note 3: these are the core development principals of the terrain generation. Thy may not affect the final product*
+*Note 3: these are the core development principals of the terrain generation. They may not affect the final product*
 # Terrain Generation
 
 The terrain generation is handled by three noise images (maps) that are all generated with independed seeds set by the server host.
