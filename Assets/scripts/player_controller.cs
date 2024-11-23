@@ -26,7 +26,7 @@ public class player_controller : MonoBehaviour
     void Update()
     {
         getInput();
-        Debug.DrawRay(transform.position, player_to_mouse);
+        Debug.DrawRay(transform.position, player_to_mouse.normalized);
     }
 
     void FixedUpdate()
@@ -42,7 +42,7 @@ public class player_controller : MonoBehaviour
     void getInput()
     {
         wishDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        player_to_mouse = (cam.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
+        player_to_mouse = (cam.ScreenToWorldPoint(Input.mousePosition) - transform.position);
         if(Input.GetKeyDown(KeyCode.Space))
         {
             roll();
