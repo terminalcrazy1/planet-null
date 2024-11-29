@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class player_attack : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
+    public GameObject weapon;
+    public GameObject parent;
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("Fire1")) {
+            GameObject.Instantiate(weapon, parent.transform, false);
+        }
     }
 }
