@@ -7,7 +7,7 @@ See program_versioning for tool versions
 
 **Planet: Null** is a player versus environment versus player, top down orthographic, melee survival role playing game (PvEvP TTOMSRPG). It will have skill progression, crafting, building, and countless worlds to explore by the expected MVP release in December 2025
 
-## Planet: Null (Preliminary Name) - Feature List
+## Planet: Null - Feature List
 
 **First Set** - Possible Timeline: Finish by end of July 2024
 - [ ] Switch Completed Features to Unity - Zack
