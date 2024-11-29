@@ -10,7 +10,7 @@ See program_versioning for tool versions
 ## Planet: Null - Feature List
 
 **First Set** - Possible Timeline: Finish by end of July 2024
-- [ ] Switch Completed Features to Unity - Zack
+- [X] Switch Completed Features to Unity - Zack
 - [X] Player Movement - Liam
 - [ ] Networking - Liam
 - [ ] Terrain Height Generation - Zack
