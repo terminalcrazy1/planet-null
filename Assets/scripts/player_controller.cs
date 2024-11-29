@@ -5,16 +5,21 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEditor.Rendering.LookDev;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class player_controller : MonoBehaviour
 {
-    Vector2 wishDir;
+    Vector2 wish_dir;
     public float speed;
     public float roll_speed;
     public Rigidbody2D rb;
     public Camera cam;
-    Collider2D attack_hit_box;
     Vector2 player_to_mouse;
+    bool is_rolling;
+    float cur_speed;
+    float roll_start_time;
+    public float roll_duration;
+    public float roll_cooldown;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +31,7 @@ public class player_controller : MonoBehaviour
     void Update()
     {
         getInput();
+        handleRoll();
         Debug.DrawRay(transform.position, player_to_mouse.normalized);
     }
 
@@ -36,26 +42,47 @@ public class player_controller : MonoBehaviour
 
     void move()
     {
-        rb.linearVelocity = wishDir.normalized * speed;
+        rb.linearVelocity = wish_dir.normalized * cur_speed;
     }
 
     void getInput()
     {
-        wishDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if (is_rolling != true)
+        {
+            wish_dir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        }
         player_to_mouse = (cam.ScreenToWorldPoint(Input.mousePosition) - transform.position);
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            roll();
+            if(roll_start_time + roll_cooldown < Time.time){
+                beginRoll();
+            }  
         }
     }
 
-    void roll()
+    void beginRoll()
     {
-        transform.Translate(player_to_mouse * roll_speed);
+        roll_start_time = Time.time;
+
+        is_rolling = true;
         Debug.Log("roll");
     }
-    void attack()
+    void handleRoll()
     {
+        if (is_rolling == true)
+        {
+            cur_speed = roll_speed; 
+            
+        }
+        else
+        {
+            cur_speed = speed;
+        }
 
+        if(roll_start_time + roll_duration < Time.time)
+        {
+            is_rolling = false;
+        }
+        
     }
 }
