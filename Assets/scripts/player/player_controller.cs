@@ -14,7 +14,7 @@ public class player_controller : MonoBehaviour
     public float roll_speed;
     public Rigidbody2D rb;
     public Camera cam;
-    Vector2 player_to_mouse;
+    public Vector2 player_to_mouse;
     bool is_rolling;
     float cur_speed;
     float roll_start_time;
@@ -32,7 +32,6 @@ public class player_controller : MonoBehaviour
     {
         getInput();
         handleRoll();
-        Debug.DrawRay(transform.position, player_to_mouse.normalized);
     }
 
     void FixedUpdate()
@@ -56,7 +55,7 @@ public class player_controller : MonoBehaviour
         {
             if(roll_start_time + roll_cooldown < Time.time && wish_dir != Vector2.zero){
                 beginRoll();
-            }  
+            }
         }
     }
 
@@ -71,8 +70,8 @@ public class player_controller : MonoBehaviour
     {
         if (is_rolling == true)
         {
-            cur_speed = roll_speed; 
-            
+            cur_speed = roll_speed;
+
         }
         else
         {
@@ -83,6 +82,6 @@ public class player_controller : MonoBehaviour
         {
             is_rolling = false;
         }
-        
+
     }
 }
