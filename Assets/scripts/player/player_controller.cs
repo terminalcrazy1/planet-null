@@ -54,7 +54,7 @@ public class player_controller : MonoBehaviour
         player_to_mouse = (cam.ScreenToWorldPoint(Input.mousePosition) - transform.position);
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            if(roll_start_time + roll_cooldown < Time.time){
+            if(roll_start_time + roll_cooldown < Time.time && wish_dir != Vector2.zero){
                 beginRoll();
             }  
         }
