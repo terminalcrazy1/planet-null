@@ -321,6 +321,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4836668555053006403, guid: b08b7d617b507d44c827d655dbf5a2aa, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 291851014}
+    - target: {fileID: 6917957778221034449, guid: b08b7d617b507d44c827d655dbf5a2aa, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 291851014}
+    - target: {fileID: 6917957778221034449, guid: b08b7d617b507d44c827d655dbf5a2aa, type: 3}
+      propertyPath: weapon_origin
+      value: 
+      objectReference: {fileID: 1839109983}
     - target: {fileID: 8675890652771257105, guid: b08b7d617b507d44c827d655dbf5a2aa, type: 3}
       propertyPath: m_Name
       value: Player
@@ -500,6 +512,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1839109983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4820079336588016488, guid: 4c4b508e4cecb19438da81043a7a21d9, type: 3}
+  m_PrefabInstance: {fileID: 718045228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
