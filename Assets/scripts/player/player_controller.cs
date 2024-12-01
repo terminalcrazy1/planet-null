@@ -7,7 +7,6 @@ public class player_controller : MonoBehaviour
     public float roll_speed;
     public Rigidbody2D rb;
     public Camera cam;
-    public Vector2 player_to_mouse;
     bool is_rolling;
     float cur_speed;
     float roll_start_time;
@@ -43,7 +42,6 @@ public class player_controller : MonoBehaviour
         {
             wish_dir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         }
-        player_to_mouse = (cam.ScreenToWorldPoint(Input.mousePosition) - transform.position);
         if(Input.GetKeyDown(KeyCode.Space))
         {
             if(roll_start_time + roll_cooldown < Time.time && wish_dir != Vector2.zero){
