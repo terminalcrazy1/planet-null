@@ -330,6 +330,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 291851014}
     - target: {fileID: 6917957778221034449, guid: b08b7d617b507d44c827d655dbf5a2aa, type: 3}
+      propertyPath: weapon_orig
+      value: 
+      objectReference: {fileID: 1839109983}
+    - target: {fileID: 6917957778221034449, guid: b08b7d617b507d44c827d655dbf5a2aa, type: 3}
       propertyPath: weapon_origin
       value: 
       objectReference: {fileID: 1839109983}
@@ -362,6 +366,7 @@ GameObject:
   - component: {fileID: 1771335090}
   - component: {fileID: 1771335089}
   - component: {fileID: 1771335088}
+  - component: {fileID: 1771335092}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -512,6 +517,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1771335092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771335087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24ee57f7b80c3740b7303104519bec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  max_health: 100
 --- !u!1 &1839109983 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4820079336588016488, guid: 4c4b508e4cecb19438da81043a7a21d9, type: 3}
