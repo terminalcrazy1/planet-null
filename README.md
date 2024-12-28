@@ -15,6 +15,7 @@ See program_versioning for tool versions
 - [ ] Networking - Liam
 - [ ] Health System - Liam
 - [ ] Armor System - Liam
+- [ ] Player Attack - Liam
 - [ ] Terrain Height Generation - Zack
 - [ ] Water Generation - Zack
 - [ ] Resource Generation - Zack
@@ -27,7 +28,6 @@ See program_versioning for tool versions
 - [ ] Basic Furnishing (Chair, Bed, Crafter, Refiner) - Zack
 
 **Third Set** - Possible Timeline: Finish by end of February 2025
-- [ ] Player Attack - Liam
 - [ ] Basic Crafting - Zack
 - [ ] Item Set ( 7 Head Armor, 7 Body Armor, 7 Weapons) - Liam & Zack
 
