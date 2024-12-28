@@ -13,6 +13,8 @@ See program_versioning for tool versions
 - [X] Switch Completed Features to Unity - Zack
 - [X] Player Movement - Liam
 - [ ] Networking - Liam
+- [ ] Health System - Liam
+- [ ] Armor System - Liam
 - [ ] Terrain Height Generation - Zack
 - [ ] Water Generation - Zack
 - [ ] Resource Generation - Zack
@@ -23,8 +25,6 @@ See program_versioning for tool versions
 - [ ] Basic Resource Gathering System - Zack
 - [ ] Door and Wall tiles - Zack
 - [ ] Basic Furnishing (Chair, Bed, Crafter, Refiner) - Zack
-- [ ] Health System - Liam
-- [ ] Armor System - Liam
 
 **Third Set** - Possible Timeline: Finish by end of February 2025
 - [ ] Player Attack - Liam
