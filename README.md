@@ -10,39 +10,39 @@ See program_versioning for tool versions
 ## Planet: Null - Feature List
 
 **First Set** - Possible Timeline: Finish by end of July 2024
-- [X] Switch Completed Features to Unity - Zack
-- [X] Player Movement - Liam
-- [ ] Networking - Liam
-- [ ] Health System - Liam
-- [ ] Armor System - Liam
-- [ ] Player Attack - Liam
-- [ ] Terrain Height Generation - Zack
-- [ ] Water Generation - Zack
-- [ ] Resource Generation - Zack
-- [ ] User Interface (Main Menu and Server Browser) - Zack
+- [X] Switch Completed Features to Unity - ZSmith
+- [X] Player Movement - TerminalCrazy
+- [ ] Networking - TerminalCrazy
+- [ ] Health System - TerminalCrazy
+- [ ] Armor System - TerminalCrazy
+- [ ] Player Attack - TerminalCrazy
+- [ ] Terrain Height Generation - ZSmith
+- [ ] Water Generation - ZSmith
+- [ ] Resource Generation - ZSmith
+- [ ] User Interface (Main Menu and Server Browser) - ZSmith
 
 **Second Set** - Possible Timeline: Finish by end of 2024
-- [ ] Basic Building & Build Menu - Zack
-- [ ] Basic Resource Gathering System - Zack
-- [ ] Door and Wall tiles - Zack
-- [ ] Basic Furnishing (Chair, Bed, Crafter, Refiner) - Zack
+- [ ] Basic Building & Build Menu - ZSmith
+- [ ] Basic Resource Gathering System - ZSmith
+- [ ] Door and Wall tiles - ZSmith
+- [ ] Basic Furnishing (Chair, Bed, Crafter, Refiner) - ZSmith
 
 **Third Set** - Possible Timeline: Finish by end of February 2025
-- [ ] Basic Crafting - Zack
-- [ ] Item Set ( 7 Head Armor, 7 Body Armor, 7 Weapons) - Liam & Zack
+- [ ] Basic Crafting - ZSmith
+- [ ] Item Set ( 7 Head Armor, 7 Body Armor, 7 Weapons) - TerminalCrazy & ZSmith
 
 **Fourth Set** - Possible Timeline: Finish by end of second week of May 2025
-- [ ] Skill System - Liam
-- [ ] Multiplayer Combat (PvP) - Liam & Zack
+- [ ] Skill System - TerminalCrazy
+- [ ] Multiplayer Combat (PvP) - TerminalCrazy & ZSmith
 
 **Fifth Set** - Possible Timeline: Finish by end of May 2025
-- [ ] Visor Item (View other players builds) - Liam
-- [ ] Heat (Mana Adjacent) System - Liam
+- [ ] Visor Item (View other players builds) - TerminalCrazy
+- [ ] Heat (Mana Adjacent) System - TerminalCrazy
 
 **Additional MVP Functionality**
-- [ ] Inventory Management - Zack
-- [ ] Server Side Saving - Liam
-- [ ] Packet Spoofing Protection - Liam
+- [ ] Inventory Management - ZSmith
+- [ ] Server Side Saving - TerminalCrazy
+- [ ] Packet Spoofing Protection - TerminalCrazy
 
 ## Feature Tree
 **Out of date!**
