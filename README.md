@@ -1,5 +1,5 @@
 # Planet: Null
-## We kind of bit of a bit more than we could chew, here, so we are pausing development. We may resume in the future.
+## We kind of bit off a bit more than we could chew here, so we are pausing development. We may resume in the future.
 
 **Possible Inspirations for Planet: Null**
 - Darker and Darker - Similar gameplay, not graphics
