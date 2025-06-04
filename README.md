@@ -43,9 +43,3 @@ See program_versioning for tool versions
 - [ ] Inventory Management - ZSmith
 - [ ] Server Side Saving - TerminalCrazy
 - [ ] Packet Spoofing Protection - TerminalCrazy
-
-## Feature Tree
-**Out of date!**
-Below is the feature tree. Remember to suggest edits by reopening issue #2.
-
-![image](feature-tree.svg)
